@@ -1,0 +1,72 @@
+<title>My Example</title>
+<h3 style= "border: 5px solid rgb(105, 175, 26); text-align: center;">Want to order baseball equipment? Please fill out this survey</h3>
+<form method="get" action="/html/codes/html_form_handler.cfm">
+  <p>
+    <label>Name
+      <input type="text" name="customer_name" required>
+    </label> 
+  </p>
+
+  <p>
+    <label>Phone 
+      <input type="tel" name="phone_number">
+    </label>
+  </p>
+
+  <p>
+    <label>Email 
+      <input type="email" name="email_address">
+    </label>
+  </p> 
+
+  <p>
+    <label>Today´s date and time
+      <input type="datetime-local" name="pickup_time" required>
+    </label>
+  </p>
+
+  <fieldset>
+    <legend>What type of bat do you want?</legend>
+    <p><label> <input type="radio" name="taxi" required value="car"> Bamboo </label></p>
+    <p><label> <input type="radio" name="taxi" required value="van"> Hickory</label></p>
+    <p><label> <input type="radio" name="taxi" required value="tuktuk"> Hardwood </label></p>
+    <p><label> <input type="radio" name="taxi" required value="tuktuk"> Metal alloy (typically aluminum) </label></p>
+    <p><label> <input type="radio" name="taxi" required value="tuktuk"> Maple</label></p>
+  </fieldset>
+
+  <fieldset>
+    <legend>Any equipment you require?</legend>
+    <p><label> <input type="checkbox" name="extras" value="baby"> Helmet </label></p>
+    <p><label> <input type="checkbox" name="extras" value="wheelchair"> Gloves </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> Catcher's Gear </label></p>
+    <p><label> <input type="checkbox" name="extras" value="tip"> Baseball </label></p>
+  </fieldset>
+
+
+  <p>
+    <label>What size of bat do you require?  
+      <select id="pickup_place" name="pickup_place">
+        <option value="" selected="selected">Select One</option>
+        <option value="town_hall" >24 inches</option>
+        <option value="telepathy" >26 inches</option>
+        <option value="telepathy" >28 inches</option>
+        <option value="telepathy" >30 inches</option>
+        <option value="telepathy" >32 inches</option>
+        <option value="telepathy" >34 inches</option>
+      </select>
+    </label> 
+  </p>
+
+
+  <p>
+    <label>Special Instructions
+      <textarea name="comments" maxlength="500"></textarea>
+    </label>
+  </p>
+
+  <p><button>Submit Booking</button></p>
+
+</form>
+
+
+
